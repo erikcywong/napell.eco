@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="title-en" content="Unit Economics — One Warehouse, Fully Priced | NAPELL Ecosystem">
+<meta name="title-zh" content="单仓经济 — 一座仓，算到每一分钱 | NAPELL 生态">
+<title>Unit Economics — One Warehouse, Fully Priced | NAPELL Ecosystem</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/i18n.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<script src="assets/js/charts.js"></script>
+</head>
+<body>
+<nav class="nav">
+  <a class="logo" href="index.html">NAPELL<em>.</em>eco</a>
+  <ul>
+    <li><a class="link" href="index.html"><span class="en">Vision</span><span class="zh">愿景</span></a></li>
+    <li><a class="link" href="platform.html"><span class="en">Platform</span><span class="zh">平台</span></a></li>
+    <li><a class="link on" href="economics.html"><span class="en">Economics</span><span class="zh">经济模型</span></a></li>
+    <li>
+      <a class="link" href="partners.html"><span class="en">Partners</span><span class="zh">合作</span></a>
+      <div class="dropdown">
+        <a href="partners.html#models"><span class="en">Cooperation models</span><span class="zh">四种合作模式</span></a>
+        <a href="partners.html#qc"><span class="en">Quality control</span><span class="zh">品控六统一</span></a>
+        <a href="partners.html#ip"><span class="en">IP protection</span><span class="zh">知识产权保护</span></a>
+        <a href="partners.html#contract"><span class="en">Contract pillars</span><span class="zh">协议六大支柱</span></a>
+      </div>
+    </li>
+    <li>
+      <a class="link" href="roadmap.html"><span class="en">Roadmap</span><span class="zh">路线图</span></a>
+      <div class="dropdown">
+        <a href="roadmap.html#phase1"><span class="en">Phase 1 · 0→1</span><span class="zh">阶段一 · 0→1</span></a>
+        <a href="roadmap.html#phase2"><span class="en">Phase 2 · 1→10</span><span class="zh">阶段二 · 1→10</span></a>
+        <a href="roadmap.html#phase3"><span class="en">Phase 3 · 10→100</span><span class="zh">阶段三 · 10→100</span></a>
+        <a href="roadmap.html#risks"><span class="en">Risk matrix</span><span class="zh">风险矩阵</span></a>
+      </div>
+    </li>
+    <li><button class="lang-btn" id="langToggle">中文</button></li>
+  </ul>
+</nav>
+
+<main>
+  <section>
+    <p class="kicker"><span class="en">Unit Economics</span><span class="zh">单仓经济</span></p>
+    <h1>
+      <span class="en">A partner asks three questions. Here are the numbers.</span>
+      <span class="zh">加盟商只问三个问题。数字在这里。</span>
+    </h1>
+    <p class="sub">
+      <span class="en">Payback period. Exit mechanism. Who underwrites the buyback. Everything below is generated live from the NAPELL Unit Warehouse Financial Model v1 — assumptions editable, conclusions honest.</span>
+      <span class="zh">回本周期。退出机制。谁为回购兜底。以下全部数字来自 NAPELL 单仓财务模型 v1——假设可调，结论诚实。</span>
+    </p>
+  </section>
+
+  <section>
+    <div class="grid g4">
+      <div class="card"><div class="num">¥2.0<small>M</small></div><p><span class="en">Total capex · 6,000 plants</span><span class="zh">总投资 · 6,000 株</span></p></div>
+      <div class="card"><div class="num">¥116.2<small>万</small></div><p><span class="en">Steady-state revenue (Year 5)</span><span class="zh">稳态年收入（第 5 年）</span></p></div>
+      <div class="card"><div class="num pos">¥68.7<small>万</small></div><p><span class="en">Steady-state EBITDA · 59.1%</span><span class="zh">稳态 EBITDA · 59.1%</span></p></div>
+      <div class="card"><div class="num">2.99<small>t</small></div><p><span class="en">Green beans / yr at full ramp</span><span class="zh">满产年产生豆</span></p></div>
+    </div>
+  </section>
+
+  <!-- INVESTMENT / OPEX -->
+  <section>
+    <div class="grid g2">
+      <div class="card">
+        <h3><span class="en">Capex breakdown</span><span class="zh">投资构成</span></h3>
+        <table class="tbl">
+          <tr><th><span class="en">Item</span><span class="zh">项目</span></th><th class="r">¥</th></tr>
+          <tr><td><span class="en">Equipment (towers, misting, LED, HVAC, sensors)</span><span class="zh">设备（塔架/雾化/LED/环控/传感）</span></td><td class="r">1,500,000</td></tr>
+          <tr><td><span class="en">Site retrofit & power upgrade</span><span class="zh">场地改造与水电增容</span></td><td class="r">300,000</td></tr>
+          <tr><td><span class="en">Commissioning & first seedlings</span><span class="zh">安装调试与首期种苗</span></td><td class="r">200,000</td></tr>
+          <tr><td class="hl"><span class="en">Total</span><span class="zh">合计</span></td><td class="r hl">2,000,000</td></tr>
+        </table>
+      </div>
+      <div class="card">
+        <h3><span class="en">Steady-state opex (per year)</span><span class="zh">稳态运营成本（每年）</span></h3>
+        <table class="tbl">
+          <tr><th><span class="en">Item</span><span class="zh">项目</span></th><th class="r">¥</th></tr>
+          <tr><td><span class="en">Electricity (LED + misting + HVAC)</span><span class="zh">电费（LED/雾化泵/环控）</span></td><td class="r">170,000</td></tr>
+          <tr><td><span class="en">Labor (1.5 FTE)</span><span class="zh">人工（1.5 人）</span></td><td class="r">120,000</td></tr>
+          <tr><td><span class="en">Platform service & certification</span><span class="zh">平台服务与认证检测</span></td><td class="r">80,000</td></tr>
+          <tr><td><span class="en">Water & nutrients (platform-supplied)</span><span class="zh">水与营养液（平台供应）</span></td><td class="r">45,000</td></tr>
+          <tr><td><span class="en">Maintenance & consumables</span><span class="zh">维护与耗材</span></td><td class="r">40,000</td></tr>
+          <tr><td><span class="en">Packaging & logistics</span><span class="zh">包装物流</span></td><td class="r">20,000</td></tr>
+          <tr><td class="hl"><span class="en">Total</span><span class="zh">合计</span></td><td class="r hl">475,000</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUYBACK -->
+  <section>
+    <h2><span class="en">Buyback is tiered — certification is earned, not granted</span><span class="zh">回购分级——认证靠挣，不靠给</span></h2>
+    <p class="sub"><span class="en">Floor price anchors to the ICE Arabica C contract plus a cupping-quality premium, with a floating band. Below Grade C, beans still move — through commercial channels, without the NAPELL mark.</span><span class="zh">保底价锚定 ICE 阿拉比卡 C 合约加杯测品质溢价，设浮动带。C 级以下仍可走大宗渠道——但不带 NAPELL 标识。</span></p>
+    <div class="card">
+      <table class="tbl">
+        <tr><th><span class="en">Grade</span><span class="zh">等级</span></th><th><span class="en">Cupping score</span><span class="zh">杯测分</span></th><th class="r"><span class="en">Buyback floor (¥/kg)</span><span class="zh">回购保底价（¥/kg）</span></th><th><span class="en">Share (base case)</span><span class="zh">占比（基准情景）</span></th></tr>
+        <tr><td class="pos"><span class="en">Specialty</span><span class="zh">精品级</span></td><td>≥ 84</td><td class="r">140</td><td>80%</td></tr>
+        <tr><td><span class="en">Commercial</span><span class="zh">商业级</span></td><td>80 – 83.5</td><td class="r">90</td><td>15%</td></tr>
+        <tr><td><span class="en">Downgraded</span><span class="zh">降级处理</span></td><td>&lt; 80</td><td class="r">50</td><td>5%</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- CHARTS -->
+  <section>
+    <h2><span class="en">Where the money comes from, and when it comes back</span><span class="zh">钱从哪来，何时回来</span></h2>
+    <div class="grid g2">
+      <div class="chart-box">
+        <h3><span class="en">Steady-state revenue mix</span><span class="zh">稳态收入结构</span></h3>
+        <p class="src"><span class="en">Seedlings 62% · green beans 33% · by-products 5% — every warehouse is a propagation node.</span><span class="zh">种苗 62% · 生豆 33% · 副产物 5%——每座仓都是繁育节点。</span></p>
+        <div class="chart" data-chart="mix"></div>
+      </div>
+      <div class="chart-box">
+        <h3><span class="en">Cumulative cash flow, Year 0–10</span><span class="zh">累计现金流，第 0–10 年</span></h3>
+        <p class="src"><span class="en">Crosses zero in Year 5 (~4.96 yrs incl. ramp & tax). Red = building years.</span><span class="zh">第 5 年穿越零轴（含爬坡与税收约 4.96 年）。红色 = 建设与生长期。</span></p>
+        <div class="chart" data-chart="cum"></div>
+      </div>
+    </div>
+    <div class="grid g2">
+      <div class="chart-box">
+        <h3><span class="en">Sensitivity: payback vs buyback price</span><span class="zh">敏感性：回收期 vs 回购价</span></h3>
+        <p class="src"><span class="en">±20% on price bends payback by ±0.36 yrs. Seedling income is the stabilizer.</span><span class="zh">价格 ±20% 使回收期偏移 ±0.36 年。种苗收入是稳定器。</span></p>
+        <div class="chart" data-chart="sens"></div>
+      </div>
+      <div class="chart-box">
+        <h3><span class="en">Sensitivity: steady-state EBITDA vs price</span><span class="zh">敏感性：稳态 EBITDA vs 回购价</span></h3>
+        <p class="src"><span class="en">This is why the buyback floor is priced into the contract, not promised in the pitch deck.</span><span class="zh">这就是保底价必须写进合同、而不是写在路演 PPT 里的原因。</span></p>
+        <div class="chart" data-chart="ebitda"></div>
+      </div>
+    </div>
+    <div class="callout">
+      <b><span class="en">Honest disclosure:</span><span class="zh">诚实口径：</span></b>
+      <span class="en">2.9 yrs is the steady-state static payback. Including the 18-month juvenility, ramp-up and income tax, cash crosses zero at ~4.96 yrs. Model excludes loss carryforward, loan interest, land rent (assumes partner-owned sites) and shared post-processing capex.</span>
+      <span class="zh">2.9 年是稳态静态回收期；计入 18 个月营养生长期、爬坡与所得税后，现金流约 4.96 年穿越零轴。模型未含亏损弥补、贷款利息、土地租金（假设加盟商自有场地）与后处理中心分摊。</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  NAPELL Ecosystem · <span class="en">Source: NAPELL Unit Warehouse Financial Model v1 (Oct 2026)</span><span class="zh">来源：NAPELL 单仓财务模型 v1（2026 年 10 月）</span>
+</footer>
+</body>
+</html>

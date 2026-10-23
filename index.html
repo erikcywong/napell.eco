@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="title-en" content="NAPELL Ecosystem — Sell Certainty, Not Warehouses">
+<meta name="title-zh" content="NAPELL 生态平台 — 卖的是确定性，不是仓">
+<title>NAPELL Ecosystem — Sell Certainty, Not Warehouses</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/i18n.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<script src="assets/js/charts.js"></script>
+</head>
+<body>
+<nav class="nav">
+  <a class="logo" href="index.html">NAPELL<em>.</em>eco</a>
+  <ul>
+    <li><a class="link on" href="index.html"><span class="en">Vision</span><span class="zh">愿景</span></a></li>
+    <li><a class="link" href="platform.html"><span class="en">Platform</span><span class="zh">平台</span></a></li>
+    <li><a class="link" href="economics.html"><span class="en">Economics</span><span class="zh">经济模型</span></a></li>
+    <li>
+      <a class="link" href="partners.html"><span class="en">Partners</span><span class="zh">合作</span></a>
+      <div class="dropdown">
+        <a href="partners.html#models"><span class="en">Cooperation models</span><span class="zh">四种合作模式</span></a>
+        <a href="partners.html#qc"><span class="en">Quality control</span><span class="zh">品控六统一</span></a>
+        <a href="partners.html#ip"><span class="en">IP protection</span><span class="zh">知识产权保护</span></a>
+        <a href="partners.html#contract"><span class="en">Contract pillars</span><span class="zh">协议六大支柱</span></a>
+      </div>
+    </li>
+    <li>
+      <a class="link" href="roadmap.html"><span class="en">Roadmap</span><span class="zh">路线图</span></a>
+      <div class="dropdown">
+        <a href="roadmap.html#phase1"><span class="en">Phase 1 · 0→1</span><span class="zh">阶段一 · 0→1</span></a>
+        <a href="roadmap.html#phase2"><span class="en">Phase 2 · 1→10</span><span class="zh">阶段二 · 1→10</span></a>
+        <a href="roadmap.html#phase3"><span class="en">Phase 3 · 10→100</span><span class="zh">阶段三 · 10→100</span></a>
+        <a href="roadmap.html#risks"><span class="en">Risk matrix</span><span class="zh">风险矩阵</span></a>
+      </div>
+    </li>
+    <li><button class="lang-btn" id="langToggle">中文</button></li>
+  </ul>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section>
+    <p class="kicker">NAPELL Ecosystem Platform · CEO Letter</p>
+    <h1>
+      <span class="en">Sell Certainty,<br>Not Warehouses.</span>
+      <span class="zh">卖的是确定性，<br>不是仓。</span>
+    </h1>
+    <p class="lead">
+      <span class="en">Over the past five years we proved aeroponic coffee can be grown. The next five years are about proving it can be <strong>replicated</strong> — certified, financed, and scaled. And the people who replicate it must profit first.</span>
+      <span class="zh">过去五年，我们证明了雾培咖啡种得出来。未来五年，要证明的是它能被<strong>复制</strong>——被认证、被融资、被规模化。而复制它的人，必须先赚到钱。</span>
+    </p>
+    <p class="sub">
+      <span class="en">We are not opening a franchise. We are opening a certified production network — technology licensing + certified growing warehouses + floor-price buyback + a data & QC platform. What partners buy is not a warehouse; it is a repeatable, bankable output capability.</span>
+      <span class="zh">我们开放的不是加盟，而是一张认证生产网络——技术授权 + 认证种植仓 + 保底回购 + 数据品控平台。加盟商买到的不是一套设备，而是一种可重复、可入账的稳定出品能力。</span>
+    </p>
+  </section>
+
+  <!-- KPI -->
+  <section>
+    <div class="grid g4">
+      <div class="card accent">
+        <span class="tag blue"><span class="en">UNIT ECONOMICS</span><span class="zh">单仓经济</span></span>
+        <div class="num">¥2.0<small>M</small></div>
+        <p><span class="en">capex per 6,000-plant certified warehouse</span><span class="zh">单座 6,000 株认证仓总投资</span></p>
+      </div>
+      <div class="card">
+        <div class="num" style="color:var(--up)">59.1<small>%</small></div>
+        <p><span class="en">steady-state EBITDA margin (¥687k/yr)</span><span class="zh">稳态 EBITDA 率（¥68.7 万/年）</span></p>
+      </div>
+      <div class="card">
+        <div class="num">2.9<small>y</small></div>
+        <p><span class="en">static payback · ~5.0y incl. 18-month juvenility & ramp</span><span class="zh">静态回收 · 含 18 个月生长期与爬坡约 5.0 年</span></p>
+      </div>
+      <div class="card">
+        <div class="num">16.9<small>%</small></div>
+        <p><span class="en">10-year IRR, after tax</span><span class="zh">10 年 IRR（税后）</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLYWHEEL -->
+  <section>
+    <p class="kicker"><span class="en">The Flywheel</span><span class="zh">飞轮</span></p>
+    <h2>
+      <span class="en">The first tooth is an order, not a franchisee.</span>
+      <span class="zh">飞轮的第一齿是订单，不是加盟商。</span>
+    </h2>
+    <p class="sub">
+      <span class="en">Recruiting partners before real purchase orders exist means asking them to carry our cold-start risk. That model collapses. So the flywheel starts at the demo warehouse.</span>
+      <span class="zh">没有真实采购订单就去招加盟，等于让加盟商替我们承担冷启动风险——模式必然崩。所以飞轮从示范仓开始转。</span>
+    </p>
+    <div class="fly">
+      <div class="step"><b>01</b><span><span class="en">Demo warehouse ships stable lots</span><span class="zh">示范仓稳定出品</span></span></div>
+      <div class="step"><b>02</b><span><span class="en">Roasters commit & cup-approve</span><span class="zh">烘焙商下单并杯测认可</span></span></div>
+      <div class="step"><b>03</b><span><span class="en">Partners dare to build</span><span class="zh">加盟商敢建仓</span></span></div>
+      <div class="step"><b>04</b><span><span class="en">Scale bends the cost curve</span><span class="zh">规模摊薄成本曲线</span></span></div>
+      <div class="step"><b>05</b><span><span class="en">Certification earns premium</span><span class="zh">认证带来品牌溢价</span></span></div>
+      <div class="step"><b>06</b><span><span class="en">Data feeds the tech back</span><span class="zh">数据反哺技术迭代</span></span></div>
+    </div>
+  </section>
+
+  <!-- WHAT WE SELL / KEEP -->
+  <section>
+    <div class="grid g2">
+      <div class="card accent">
+        <span class="tag green"><span class="en">WE OPEN</span><span class="zh">我们开放</span></span>
+        <h3><span class="en">The network, not the recipe</span><span class="zh">开放网络，不开放配方</span></h3>
+        <p>
+          <span class="en">Certified-warehouse cooperation, joint ventures, licensing with audit rights, and our buyback channel. Partners get everything needed to produce within spec.</span>
+          <span class="zh">认证仓合作、联营、带审计权的技术授权，以及回购通道。加盟商拿到的是"规格内生产"所需的全部。</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="tag red"><span class="en">WE KEEP</span><span class="zh">我们守住</span></span>
+        <h3><span class="en">Four things never leave the building</span><span class="zh">四样东西永不出门</span></h3>
+        <p>
+          <span class="en">Nutrient formulations · environment-control algorithms · root-zone microbiology · the data platform. Key control units ship as black boxes; consumables are supplied by us.</span>
+          <span class="zh">营养液配方 · 环控算法 · 根系菌群管理 · 数据平台。关键控制单元以黑箱交付，耗材由平台统一供应。</span>
+        </p>
+      </div>
+    </div>
+    <div class="callout blue">
+      <b><span class="en">Revenue truth:</span><span class="zh">收入真相：</span></b>
+      <span class="en">green-bean buyback is only ~33% of a warehouse's steady-state revenue; seedling propagation is ~62%. Every certified warehouse doubles as a regional propagation node — the network grows its own growth.</span>
+      <span class="zh">生豆回购只占单仓稳态收入约 33%，种苗繁育占约 62%。每座认证仓同时是区域繁育节点——这张网络自己长出自己的扩张燃料。</span>
+    </div>
+  </section>
+
+  <!-- QUICK LINKS -->
+  <section>
+    <div class="grid g3">
+      <a class="card" href="platform.html" style="text-decoration:none">
+        <span class="tag blue"><span class="en">PLATFORM</span><span class="zh">平台</span></span>
+        <h3><span class="en">Four-layer open architecture</span><span class="zh">四层开放架构</span></h3>
+        <p><span class="en">What is black-boxed, what is modular, what is certified, who owns the data.</span><span class="zh">什么黑箱、什么模块化、什么被认证、数据归谁。</span></p>
+      </a>
+      <a class="card" href="economics.html" style="text-decoration:none">
+        <span class="tag green"><span class="en">ECONOMICS</span><span class="zh">经济模型</span></span>
+        <h3><span class="en">One warehouse, fully priced</span><span class="zh">一座仓，算到每一分钱</span></h3>
+        <p><span class="en">Capex, opex, buyback tiers, sensitivity — straight from the financial model.</span><span class="zh">投资、运营、回购分级、敏感性——全部来自财务模型。</span></p>
+      </a>
+      <a class="card" href="roadmap.html" style="text-decoration:none">
+        <span class="tag yellow"><span class="en">ROADMAP</span><span class="zh">路线图</span></span>
+        <h3><span class="en">0→1→10→100, gated</span><span class="zh">0→1→10→100，逐级闸门</span></h3>
+        <p><span class="en">No phase unlocks until the previous one earns it. Gates, not promises.</span><span class="zh">上一阶段不达标，下一阶段不开启。用闸门，不用口号。</span></p>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  NAPELL Ecosystem · Aeroponic Coffee Platform — <span class="en">Financial figures sourced from NAPELL Unit Warehouse Financial Model v1 (Oct 2026); assumptions editable, conclusions honest.</span><span class="zh">财务数据来源：NAPELL 单仓财务模型 v1（2026 年 10 月）；假设可调，结论诚实。</span>
+</footer>
+</body>
+</html>
